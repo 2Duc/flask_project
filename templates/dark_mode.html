@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <p>
+        <button>
+            <button id="theme" onchange="switchTheme()">Chế độ sáng</button>
+            <button id="theme" onchange="switchTheme()">Chế độ tối</button>
+        </button>
+    </p>
+
+    <script>
+        function switchTheme() {
+            const theme = document.getElementById('theme').value;
+            document.getElementsByTagName("meta")[2].content = theeem;
+        }
+    </script>
+{% endblock %}
